@@ -1,0 +1,14 @@
+[workspace]
+members = [
+  "token-lending/cli",
+  "token-lending/program",
+  "token-lending/sdk",
+  "token-lending/brick",
+  "token-lending/oracles",
+]
+
+[profile.dev]
+split-debuginfo = "unpacked"
+
+[profile.release]
+overflow-checks = true

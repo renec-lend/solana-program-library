@@ -1,0 +1,124 @@
+solana program deploy target/deploy/solend_program.so --keypair .wallets/owner.json --program-id .wallets/lending.json --url https://attentive-dark-sound.solana-mainnet.quiknode.pro/82b11a979bf524d01dd9d552c158b933a76852e0/ --verbose
+RPC URL: https://attentive-dark-sound.solana-mainnet.quiknode.pro/82b11a979bf524d01dd9d552c158b933a76852e0/
+Default Signer Path: .wallets/owner.json
+Commitment: confirmed
+Blockhash expired. 5 retries remaining
+Blockhash expired. 4 retries remaining
+Program Id: 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au
+
+-----------------------------------------------------------
+target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au create-market --fee-payer .wallets/owner.json --market-owner AaJy5CcKS8S8oyFHDiU2voNz9sTSM4GyyWzcuXE42QvT --oracle FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH --switchboard-oracle SW1TCH7qEPTdLsDHRgPuMQjbQxKdH2aBStViMFnt64f
+Creating lending market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE
+Signature: 2yq6yuqf23DExZKmw5k11xk21FxaLyYJFsuw49sp2GB3pfeh2FzimT5F25dx6TapnGrFBk1rj5zRWA99i4z4aueQ
+Authority Address 3n13W32bxPojuHu9eWsvwsFVf5BnsZqeodKdTEHoeMNm
+
+-----------------------------------------------------------
+Reserve USDT
+target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source 4tniQxQtT2iQnqtewhcTLkg7Kz2HkMXrbzjQ79SUjm1Z --amount 1 --pyth-product Av6XyAMJnyi68FdsKSPYgzfXGjYrrt6jcAMwtvzLCqaM --pyth-price 3vxLXJqLqF3JG5TCbYycbKWRBbCJQLxQmBGCkyqEEefL --switchboard-feed ETAaeeuQBwsh9mC2gCov9WdhJENZuffRMXY2HgjCcSL9 --optimal-utilization-rate 90 --max-utilization-rate 100 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 2 --optimal-borrow-rate 10 --max-borrow-rate 20 --super-max-borrow-rate 300 --borrow-fee 0.002 --borrow-limit 2000000 --host-fee-percentage 20 --deposit-limit 5000000 --added-borrow-weight-bps 10 --protocol-take-rate 10 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+Adding reserve CqYaAZVvv1293rNRfhyswXauGjMVcmixj9eb8CgXsW1v
+Signature: 63u5MUNCrGATiXgYbjLXVGwcJya2oDSmeRKzvtbyfqigTai4Get171ETyCZimMzNhKJmvnihWfC27aQAYfZNuPsi
+Signature: 5iCJKrJENXXmsbU4Aq5Uao9bRMryZLvodYSN3D5ptaoq2X54Lgqoj9wZAkzmLdqmPjbixfzfQdSbC7KwNjaoqdga
+Signature: 4eAQchjEmYdbHK3w5R37UBYNrvndMigJZVxB1zgLz3kn3MQ3GdVVe3c2kR8Aoxg8MurKnhSXJ7uGG5xsHMgxqTTo
+
+-----------------------------------------------------------
+Reserve VND
+target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source ELQxEtSRYucABjCydNArALaXRRxb7VgxNBAznEbNTFjN --amount 1 --pyth-product 5P2mR41Ae7EBHPRZYm1vMsDiJ6NFyTnWR5G2smvNQGb8 --pyth-price CDHtgj9CJuRZeMdZiYvNNCTKWBDQZZeXzVcoiDyryaL4 --switchboard-feed ETAaeeuQBwsh9mC2gCov9WdhJENZuffRMXY2HgjCcSL9 --optimal-utilization-rate 95 --max-utilization-rate 100 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 2 --optimal-borrow-rate 10 --max-borrow-rate 20 --super-max-borrow-rate 300 --borrow-fee 0.002 --borrow-limit 5000000000 --host-fee-percentage 20 --deposit-limit 10000000000 --added-borrow-weight-bps 10 --protocol-take-rate 10 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+
+Adding reserve 48t5kbjsk3STsJd3Eg3zxYyY8nMvY14Ka1BGsc37YUdE
+Signature: 3Zrgjs4EQGWhkNzqkfrqfvY1epxxNoW8DQoMar9CSQ1ND5NRzk64uoL6TQJkZz4oz2AsVRhaVtDsbFfeRDCSNiW1
+Signature: 2hZSohMiTgPnSX6kPZJmNNRk8kLCWkHyap6DyJ3ycb9BYQC1W5p9YfbkJvYavfd2X6dCbDFp6FA4ukqNF5bHGvP2
+Signature: 5CMNaq7jUh1cpsW7idoa5hQW6LRbYwRSTq2vZxCegK9CqCFzWbuvqBA8efWaXYYzcvKpR1916vYmeWL4VJSagoeh
+
+-----------------------------------------------------------
+Reserve BTC
+target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source JA2qqkXWsmUUaMBgvvLPB2wkczfbftYg1rDdjuQUsi2b --amount 0.00002464 --pyth-product 4aDoSXJ5o3AuvL7QFeR6h44jALQfTmUUCTVGDD6aoJTM --pyth-price GVXRSBjFk6e6J3NbVPXohDJetcTjaeeuykUpbQF8UoMU --switchboard-feed 8SXvChNYFhRq4EZuZvnhjrB3jJRQCv4k3P4W6hesH3Ee --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 20 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 2000000 --host-fee-percentage 20 --deposit-limit 5000000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+
+Adding reserve D3vpLMDeZPquVgRJ7Vp67HQtFscMa2JmMWYS32Q4355J
+Signature: vi4USLur4n9y1FM8RQT7aCJvzBBiNGPsUhtq2uBpdwPonBH6Chyz5Ri75fYbw1dxwTjNKJCySnpiqCkytD8kpY3
+Signature: fytVmjj7pqz5uUnaMreDFHBX9qpgcaLey7gvtRsnfTfrdKaPHkoncSqBvLgN2RuEbmMPEMnyXH28L5XvoKE1YGs
+Signature: 57bMxKyXTLyd4ujGBcFC6haLx6aPVD3tBt4YxtXxWPNoRU6fYNhu5hvG6sL8L4kdrEN7fctbSjxERJndeP8iXxp4
+
+-----------------------------------------------------------
+Reserve ETH
+target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source 2v8k2XJ6qu31eKMerYgTE2PP4Z7e6pJUu5X1jrSJ9WRo --amount 0.00046173 --pyth-product EMkxjGC1CQ7JLiutDbfYb7UKb3zm9SJcUmr1YicBsdpZ --pyth-price JBu1AL4obBcCMqKBBxhpWCNUt136ijcuMZLFvTP7iWdB --switchboard-feed HNStfhaLnqwF2ZtJUizaA9uHDAVB976r2AgTUx9LrdEo --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 20 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 2000000 --host-fee-percentage 20 --deposit-limit 5000000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+
+Adding reserve 4qqEMNFzYM3CZNpqWMokG1irctD9mvfxJgwjNnKk46zC
+Signature: 5RZJPJEDjZrDkDa2TCWcfU36f69XD7kHMCVPJs1QW2nHpG5RqFvJtSofo4CaTpk2LWZEsq38Htw7ds4eEcrffNuN
+Signature: 5hgwV3jyFAu7JvVC7LnAbB5LixY6KU1kZkAJvGAKPe2vLEjvA7vb5VvmpgeJK4gYSSsd8i6NMUyaGXwM2mnNZNYT
+Signature: 2bDH7n41xu5D2ang1TQ4XrA8KxwPA8benJkZohB5Fsfzgp6Ud73Qb3CrCqPg8YJ6Mt1GHJ42vGoGLefUr2c8CzFG
+
+-----------------------------------------------------------
+Reserve SOL
+
+target/debug/solend-cli --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au add-reserve --fee-payer .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source CrhaA9V4d6KaWTjRdjgJD4G6hT4wwiG1SFbefE86ADyk --amount 0.00796072 --pyth-product ALP8SdU9oARYVLgLR7LrqMNCYBnhtnQz1cj6bwgwQmgj --pyth-price H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG --switchboard-feed GvDMxPzN1sCj7L26YDK2HnMRXEQmQ2aemov8YBtPS7vR --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 20 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 2000000 --host-fee-percentage 20 --deposit-limit 5000000 --added-borrow-weight-bps 10 --protocol-take-rate 10 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0 --verbose
+Adding reserve 73ujKUUGJ6oqRfk6TWmj6v4mTguqMVuE61WVVZSfH2sm
+Adding collateral mint 7XGHiYeW2xMP2qXLDXMwATb3HQNLBgxdYmSbdvHg2Pag
+Adding collateral supply EQHFrVhTkuVEZHZKSNXKXy3YqErtVGQWm1mPM5Xyzdq9
+Adding liquidity supply 9jabwVfaEvXb8CS23Tz97mBMqhBS56DDYisrsWWjrCsm
+Adding liquidity fee receiver Dzd2VnpV96F7HAWf2B1U2tBWNXVbiVYKtngL6R3pkcD7
+Adding user collateral 4WzzUwaJ9s2KHqxDzckAwaM9jnj2t3tTK5Ufc6tNqQgv
+Adding user transfer authority 4RNHu8N1rSNd33UtuvkxwqSkF9MCqzrQojtm9QB4eERR
+Signature: Hbg6auJFfVtKV8FVbRxy7YwJ1QMgLvc7bozhpzVYb3zcYQguJp5D116hny3cREFY98twtVWRUzJ9ndMFtFLijcS
+Signature: 5qSG9QGrNSGv8SQZpXJCojHfAnZvmLn6diWyjqtmNiy4WUguSNpPKy4PpePhqJvCBR2ok7TeYB3aLvSqaoYAaUKH
+Signature: oRnz5fGtBkti5YHZnhqwvKCXjjCjN1MHE5CMrwB9NftShHCU6QiBg6HryxqjrRPE99YbozPWwN5LV1WY3bPb1K4
+
+-----------------------------------------------------------
+Reserve RAY on SOLANA
+
+target/debug/solend-cli --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au --url https://api.mainnet-beta.solana.com add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source F92WG9jXAdEakRQxLiMdb4cviesaofz7s6apo1asHsis --amount 0.001 --pyth-product Hhipna3EoWR7u8pDruUg8RxhP5F6XLh6SEHMVDmZhWi8 --pyth-price Hhipna3EoWR7u8pDruUg8RxhP5F6XLh6SEHMVDmZhWi8 --switchboard-feed 2oALNZVi5czyHvKbnjE4Jf2gR7dNp1FBpEGaq4PzVAf7 --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 10 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 200000 --host-fee-percentage 20 --deposit-limit 500000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+Adding reserve 9qEfqdeo6EjaDCWno5G7bE6ivX7aVGK99Bpo9gDQ5ALo
+Signature: 2oSgQeoe25NGhiUGdDwFHp6FxgkBNg9zwqn6sLwn5MBFCh99hzonstcEFXL9UptYLbiJXaRKuU8RjgQzhBTDzwqh
+Signature: 3w1upwRK6XRt3vRqrmbNquTGFdEYrktBmUvW3qpTUPYDKRjYNjiVUau5LxdLx7HeQY8NkGeY9VPejK9ou8xVhRa9
+Signature: 5ZaFyUbGuq3bxcvCuBBMU7DVXK29diJm4dQboBfkg2naicCKjKdBuMU33Me7UUC1HpYSwfhLyMeaKQGvz8YaCBKW
+
+
+-----------------------------------------------------------
+Reserve JUP on Solana
+
+target/debug/solend-cli --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au --url https://api.mainnet-beta.solana.com add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source EzidVmHMGhSAwHv3xzfe4y2U8QzjPx9wifAQMNT7QoAz  --amount 0.001 --pyth-product 7dbob1psH1iZBS7qPsm3Kwbf5DzSXK8Jyg31CTgTnxH5 --pyth-price 7dbob1psH1iZBS7qPsm3Kwbf5DzSXK8Jyg31CTgTnxH5 --switchboard-feed nu11111111111111111111111111111111111111111 --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 10 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 200000 --host-fee-percentage 20 --deposit-limit 500000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+Adding reserve Ci2xDwEMJ2gNt7WuhRuKTdCUdDuKUHUzrLdDLqLLAtfP
+Signature: 4TUAon51wf4tcVpTKkfAAHRMd7caQPo9mqRGRGaEwBTWH3oDgWubXMDdZvdjZ7bPXF3V2TiuEsAdonHLkEWWtfJu
+Signature: c2XNeJHeDRJwPh3xcJf3VM4RKP6oAipYYZLNzexu5ZWbB28Mxc3AmBLJ1voCFrXb3ohzPyUbijqQ73P2csGNr2n
+Signature: 5vtXoCrykha4A5axPD81STnaf41NyU5ndjsUJ2a26EfzktapiBpvfcT1eVdZnAeuzpGN2qCtAsUk6pgqdWKrn9FY
+
+-----------------------------------------------------------
+Reserve PYTH on Solana
+
+target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au --url https://attentive-dark-sound.solana-mainnet.quiknode.pro/82b11a979bf524d01dd9d552c158b933a76852e0 add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source HpDf6KKUM2rdc8eG2tWvE3gUeAQp5qcBpD2cDaxdwmuY --amount 0.001 --pyth-product 8vjchtMuJNY4oFQdTi8yCe6mhCaNBFaUbktT482TpLPS --pyth-price 8vjchtMuJNY4oFQdTi8yCe6mhCaNBFaUbktT482TpLPS --switchboard-feed nu11111111111111111111111111111111111111111 --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 10 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 2000000 --host-fee-percentage 20 --deposit-limit 5000000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+Adding reserve 6k9BeERVPjjUgz9i8U45JN6nzRZQpC4SPqHFMAz8Cqf2
+Signature: 5eeva2dEv9r5qQnEMKubvTC5o7bCdwmqhof8umDT4J8iutmw5waGVvFDtNU6tV22NFzXbP73YeVEph1cuKg1nh7i
+Signature: 3unxRVDCfZ4qXd4KbjRE4vjHrvqv8TubYeDY9UhzRRJ77HQPxEDj6VmVqrSMAGTVjn1LqwrvMXkp5XSBQANsxVa8
+Signature: 5eqReg4HNESF5nRGbV1FYfK2EVFxFqPi4d1JG4x8VwQhMoq6dxcqEXebnYJCtAc3juE78gpUuwP29EAPdpwpKSZ6
+
+-----------------------------------------------------------
+Reserve USDC on Solana
+
+target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au --url https://api.mainnet-beta.solana.com add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source DW2KCmirmejV3NtdNETJr1usRHXeCGWqrdPAQecSPV4k --amount 0.001 --pyth-product Dpw1EAVrSB1ibxiDQyTAW6Zip3J4Btk2x4SgApQCeFbX --pyth-price Dpw1EAVrSB1ibxiDQyTAW6Zip3J4Btk2x4SgApQCeFbX --switchboard-feed BjUgj6YCnFBZ49wF54ddBVA9qu8TeqkFtkbqmZcee8uW --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 10 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 200000 --host-fee-percentage 20 --deposit-limit 500000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+Adding reserve 8b2miu3kQHgkzgaRSCj7jkf4vBTf1AGTv4m7wRkP8szy
+Signature: 51q54U3yE4AKZR9WCUV8WmqBeXGdxUuG2mRCCAm8SDBRZ6kiTpeZKEMr9CGmQmAEjhSEw8J3Z4buHJoK7AVWcga7
+Signature: 3s5BBAEWSm6XxWmzpoPED2oncLwRVX8cudrZZyoZa52rmmjmnNRPNRwzZXCNnSaUXSZ56PrKatksFGNu6XpHgnre
+Signature: t9qcHZdb1G2eQPdaStZxbwLKqTkHML8bpV2CTJequak47MzxkTzPXcRy3D3oHi3D8JCxaT1FcNUjC4CpE2CMavk
+
+-----------------------------------------------------------
+Reserve mSOL on Solana
+ target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au --url https://api.mainnet-beta.solana.com add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source 8x1JgKRBJMQHVSYVSprHKjmSx6DNqSytg5QpErJpwPzy --amount 0.001 --pyth-product 5CKzb9j4ChgLUt8Gfm5CNGLN6khXKiqMbnGAW4cgXgxK --pyth-price 5CKzb9j4ChgLUt8Gfm5CNGLN6khXKiqMbnGAW4cgXgxK --switchboard-feed nu11111111111111111111111111111111111111111  --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 10 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 200000 --host-fee-percentage 20 --deposit-limit 500000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+Adding reserve 9RysbKv7MJ6MWDJ81cKs8k35qvMwYPcEF2Thjifk5sJ4
+Signature: 5eKKqP9LaUfuDinNpLK9oKPzuUMaqvJWhBBci9uufuigmkTnkoa2yuSX5B3r1Mac9XxH1BFwvD1q6tkWZpLVQTsN
+Signature: 3BemFhckntkfsuYULABYqkyaHowwru64hfAYn4kRbfPb5jQC8kWiQLARJB3osJo28qgXb2ijdb5CMYFEg6SJyBBj
+Signature: 2iCsjcV4MagDZ5NDcqn888jsKDHGvzqZv8A1P3HjwDzQZuxGMpXmsUjb5KeurgP8J24TbPre1qDyd1XNWwi8tQbC
+
+-----------------------------------------------------------
+Reserve RENDER on Solana
+ target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au --url https://api.mainnet-beta.solana.com add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source Cc4WygDqrN6yD36rjqqNNHXajWNzxmHGiYCLB7cs8U3g --amount 0.001 --pyth-product HAm5DZhrgrWa12heKSxocQRyJWGCtXegC77hFQ8F5QTH --pyth-price HAm5DZhrgrWa12heKSxocQRyJWGCtXegC77hFQ8F5QTH --switchboard-feed nu11111111111111111111111111111111111111111  --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 10 --max-borrow-rate 100 --super-max-borrow-rate 300 --borrow-fee 0.001 --borrow-limit 200000 --host-fee-percentage 20 --deposit-limit 500000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+Adding reserve C1upbehneJqHTcv1BMVodfWfqu5NwxRT3SAVVtT3JaqR
+Signature: 22ooB71K9NVxK3jDj6j9Lfar8LdqV3nvdP6agwjVw7Kw61niYxqL9GZxrByeAY95i11DwHy9k9rDxXnoqZ9jKKES
+Signature: 5hTppQrWT8JJCBMueRqCWBUsY5zG2ZFRGY3U42T7gtqZSfi8XYLTt1EVQn2veSF1ZFLgKwrhaQudruiA1ubXuazs
+Signature: 3XKHH6ZG8mapQEkMrdiV9TCMEVerSRxUmEqpC5eFR2iuBbggNa1gqq8ECwKfGef4dmxZe2sxsfUwEuDry39SWCXL
+
+-----------------------------------------------------------
+Reserve RENEC on SOLANA
+target/debug/solend-cli  --program 9L193MV4yakKcgNT2tN4Kvf1ypn9c1sVMvsRn1Amw2Au --url https://api.mainnet-beta.solana.com add-reserve --fee-payer  .wallets/owner.json --market-owner .wallets/owner.json --source-owner .wallets/owner.json --market GqCXjw24DiMjHoPFK2XPuUduKjjjPoLV575LPdTvnsJE --source 24haTzhNR4izNX8c1MVuj4pR6ZFTfvMzxjAzGXy5pTZt --amount 0.01 --pyth-product 5dMawv33H6Z8HZpcAFHoTx6fkLgv2uS8T1iebGnaguNJ --pyth-price FBwR2kH9WWpaEB5AVvLn3xZSNBpQpW7vtHZNEEMxr3P4 --switchboard-feed nu11111111111111111111111111111111111111111  --optimal-utilization-rate 85 --max-utilization-rate 85 --loan-to-value-ratio 75 --liquidation-bonus 5 --max-liquidation-bonus 10 --max-liquidation-threshold 85 --liquidation-threshold 80 --min-borrow-rate 1 --optimal-borrow-rate 5 --max-borrow-rate 5 --super-max-borrow-rate 5 --borrow-fee 0.001 --borrow-limit 200000 --host-fee-percentage 20 --deposit-limit 500000 --added-borrow-weight-bps 10 --protocol-take-rate 80 --reserve-type Regular --scaled-price-offset-bps 0 --attributed-borrow-limit-open 0 --attributed-borrow-limit-close 0
+Adding reserve 6pgB4LC8Aa9Z6AfTMYRcUf7sFtPEQLNp7E5aQBEnvk7
+Signature: BBBrke5DeYbCwm4jkk19CXHJEhYc8v3M1SzMKH5Xw11NkaXNQa6SBYEtxH49K6T5g2bcVaYbJMdJcuB2jfneoUS
+Signature: 53R9bBZzALTLMRVp9N8wAH42kxKPEeBCkhyKmUcMQ2FWgSnTcyyUbUTm4WwvUMXWwLkQxLk7D15EpZG2hE8Mc2jB
+Signature: 5L24AiJABEUbiTq5d5Ei94TEDDYxP1ZdcmARjMxYU5GSuzNMyzy5qHq1UmAzANJ8PQAHNfEsye2p771sJnrF5xBd
